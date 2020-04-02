@@ -14,7 +14,7 @@ def fetch_file(prefix, route):
             if chunk:
                 file.write(chunk)
 
-with open("Meeting With Christ.html", "r") as html:
+with open("html/Meeting With Christ.html", "r") as html:
     html_doc = html.read()
     soup = BeautifulSoup(html_doc, 'html.parser')
     nodesList = soup.find_all("a")
